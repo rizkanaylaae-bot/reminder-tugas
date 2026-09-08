@@ -7,6 +7,23 @@
 <meta name="theme-color" content="#e7a4b8">
 <title>Reminder Tugas</title>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-messaging.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBky9xxJxyYEA3oJMobUb7KrxUShNKQAHI",
+    authDomain: "reminder-tugas-60bb2.firebaseapp.com",
+    projectId: "reminder-tugas-60bb2",
+    storageBucket: "reminder-tugas-60bb2.firebasestorage.app",
+    messagingSenderId: "918392855891",
+    appId: "1:918392855891:web:b2d085a1936e9a5fcdd5a6"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const messaging = getMessaging(app);
+    </script>
+    
 <style>
 * {
     box-sizing: border-box;
